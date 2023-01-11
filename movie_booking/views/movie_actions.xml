@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="movie_action" model="ir.actions.act_window">
+        <field name="name">Movies</field>
+        <field name="res_model">movie.movie</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Property, the first step of a new property!
+            </p>
+        </field>
+    </record>
+</odoo>

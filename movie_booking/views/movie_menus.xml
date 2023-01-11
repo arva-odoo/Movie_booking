@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="movie_menu_root" name="Movie Booking">
+        <menuitem id="movie_first_level_menu" name="advertisement">
+                <menuitem id="movie_menu_action" action="movie_action" name="movies"/>
+
+
+        </menuitem>
+    </menuitem>
+
+</odoo>
