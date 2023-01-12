@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!-- tree view-->
+    <record id="movie_cast_type_tree_view" model="ir.ui.view">
+        <field name="name">movie.cast.type.tree.view</field>
+        <field name="model">movie.cast.type</field>
+        <field name="arch" type="xml">
+            <tree string="Movie">
+                <field name="name"/>
+            </tree>
+        </field>
+
+    </record>
+
+<!-- from view-->
+    <record id="movie_cast_type_form_view" model="ir.ui.view">
+        <field name="name">movie.cast.type.form.view</field>
+        <field name="model">movie.cast.type</field>
+        <field name="arch" type="xml">
+             <form string="movie cast type"> 
+                <sheet>
+                    <group>
+                            <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -12,6 +12,8 @@
         'views/movie_actions.xml',
         'views/movie_views.xml',
         'views/movie_menus.xml',
-
+        'views/movie_cast_type_view.xml',
+        'views/show_type_view.xml',
+        'views/movie_show_template_view.xml',
     ]
 }

@@ -8,6 +8,9 @@ class movie_movie(models.Model):
     name = fields.Char('Movie name',required=True)
     release_date = fields.Date('release date')
     movie_language = fields.Char('Movie language',required=True)
-    start_date = fields.Date('start date')
-    end_date = fields.Date('End date')
-    
+    date_from = fields.Date('From')
+    date_to = fields.Date('To')
+    show_duration = fields.Float(string='show duration')
+    image = fields.Image('image')
+    seating_template = fields.Many2one('movie.show.template',string="seating_template")
+    show = fields.Float(string='show')
