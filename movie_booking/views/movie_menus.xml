@@ -2,13 +2,14 @@
 <odoo>
     <menuitem id="movie_menu_root" name="Movie Booking">
         <menuitem id="movie_first_level_menu" name="movie">
-                <menuitem id="movie_menu_action" action="movie_action" name="movies"/>
+                <menuitem id="movie_menu_action1" action="movie_action" name="movies"/>
         </menuitem>
         <menuitem id="movie_first_level2_menu" name="configuration">
-                <menuitem id="movie_show_menu_action" action="show_type_action" name="show type"/>
-                <menuitem id="movie_cast_menu_action" action="movie_cast_type_action" name="cast type"/>
-                <menuitem id="movie_show_template_menu_action" action="movie_show_template_action" name="Show template"/> 
-            </menuitem>
+                <menuitem id="movie_show_menu_action" action="movie_type_action" name="movie type"/>
+                <menuitem id="movie_menu_action" action="movie_action" name="movies"/>
+                <menuitem id="movie_seating_action" action="movie_seating_template_action" name="seating template"/>
+                <menuitem id="movie_language_menu" action="movie_language_action" name="Movie languages"/>
+            </menuitem> 
     </menuitem>
 
-</odoo>
+</odoo> 

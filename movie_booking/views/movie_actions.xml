@@ -6,41 +6,49 @@
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create a new Property, the first step of a new property!
+                Create a new Movie, the first step of a new movie!
+            </p>
+        </field>
+    </record>
+    <record id="movie_type_action" model="ir.actions.act_window">
+        <field name="name">movie types </field>
+        <field name="res_model">movie.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                 Create a new Type, the first step of a new type!
             </p>
         </field>
     </record>
 
-    <record id="movie_cast_type_action" model="ir.actions.act_window">
-        <field name="name">Cast types   </field>
-        <field name="res_model">movie.cast.type</field>
+    <record id="movie_language_action" model="ir.actions.act_window">
+        <field name="name">movie languages</field>
+        <field name="res_model">movie.languages</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create a new Property, the first step of a new property!
+                 Create a new Language, the first step of a new movie!
             </p>
         </field>
     </record>
 
-    <record id="show_type_action" model="ir.actions.act_window">
-        <field name="name">Show types </field>
-        <field name="res_model">show.type</field>
+    <record id="movie_show_action" model="ir.actions.act_window">
+        <field name="name">movie show</field>
+        <field name="res_model">movie.show</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create a new Property, the first step of a new property!
+                 Create a new Language, the first step of a new movie!
             </p>
         </field>
     </record>
-
-
-    <record id="movie_show_template_action" model="ir.actions.act_window">
-        <field name="name">Show template</field>
-        <field name="res_model">movie.show.template</field>
+    <record id="movie_seating_template_action" model="ir.actions.act_window">
+        <field name="name">Seating template</field>
+        <field name="res_model">movie.seating.template</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create a new Property, the first step of a new property!
+                 Create a new Screen, the first step of a new movie!
             </p>
         </field>
 

@@ -3,7 +3,7 @@
 <!-- tree view-->
     <record id="tempalte_tree_view" model="ir.ui.view">
         <field name="name">movie.template.tree.view</field>
-        <field name="model">movie.show.template</field>
+        <field name="model">movie.seating.template</field>
         <field name="arch" type="xml">
             <tree string="Movie template">
                 <field name="name"/>
@@ -20,7 +20,7 @@
 
     <record id="template_form_view" model="ir.ui.view">
         <field name="name">movie.template.form.view</field>
-        <field name="model">movie.show.template</field>
+        <field name="model">movie.seating.template</field>
         <field name="arch" type="xml">
             <form string="movie template">
                     

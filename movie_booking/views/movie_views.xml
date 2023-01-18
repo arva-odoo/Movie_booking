@@ -13,6 +13,7 @@
                 <field name="date_to"/>
                 <field name="image" widget="image" class="oe_avatar"/>
                 <field name="seating_template"/>
+                <!-- <first name="show_ids"/> -->
                 <!-- <field name="status" widget="badge"/> -->
             </tree>
         </field>
@@ -27,6 +28,12 @@
         <field name="arch" type="xml">
             <form string="Movie Form view">
                 <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        
+                            <button name="%(movie_show_action)d" type="action" class="oe_stat_button"  icon="fa-dollar">
+                                <field string="shows" name="show_count" widget="statinfo"/>
+                            </button>
+                        </div>
                 <field name="image" widget='image' nolabel='1' class="oe_avatar" options="{'preview_image':'image','zoom':true,'zoom_delay':1000}"/>
                    <h1>
                         <field name="name"/>
@@ -41,25 +48,30 @@
                            
                         <group>
                             <group>
-                                <field name="release_date"/>
+                                <field name="movie_language_id" options="{'no_quick_create': True, 'no_create_edit' : True}" />
                             </group>
                             <group>
-                                <field name="movie_language"/>
+                                <field name="movie_type_ids" widget="many2many_tags"/>
                             </group>
+                            <group>
+                                <field name="release_date"/>
+                            </group>
+                            <!-- <group>
+                                <field name="movie_language"/>
+                            </group> -->
                             <group>
                                 <field name="seating_template"/>
                             </group>
-
+                             </group>
                             <notebook>
                                 <page string='Event'>
-                                    <tree>
-                                    </tree>
+                                    <field name="show_ids"/>
                                 </page>
 
                                 <page string='about'>
                                 </page>
                             </notebook>
-                        </group>
+                       
                     
                 </sheet>
             </form>

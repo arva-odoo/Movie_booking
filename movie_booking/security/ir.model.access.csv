@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 movie_booking.access_movie_movie,access_movie_movie,movie_booking.model_movie_movie,base.group_user,1,1,1,1
-movie_booking.access_movie_cast_type,access_movie_cast_type,movie_booking.model_movie_cast_type,base.group_user,1,1,1,1
-movie_booking.access_show_type,access_show_type,movie_booking.model_show_type,base.group_user,1,1,1,1
-movie_booking.access_movie_show_template,access_movie_show_template,movie_booking.model_movie_show_template,base.group_user,1,1,1,1
+movie_booking.access_movie_show,access_movie_show,movie_booking.model_movie_show,base.group_user,1,1,1,1
+movie_booking.access_movie_seating_template,access_movie_seating_template,movie_booking.model_movie_seating_template,base.group_user,1,1,1,1
+movie_booking.access_movie_type,access_movie_type,movie_booking.model_movie_type,base.group_user,1,1,1,1
+movie_booking.access_movie_languages,access_movie_languages,movie_booking.model_movie_languages,base.group_user,1,1,1,1
+
