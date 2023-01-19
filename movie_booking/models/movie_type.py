@@ -6,4 +6,4 @@ class movie_type(models.Model):
     _description = 'define show type'
 
     name = fields.Char("name")
-    
+    color = fields.Integer('color')

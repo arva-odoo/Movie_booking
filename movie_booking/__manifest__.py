@@ -16,5 +16,11 @@
         'views/movie_seating_template_view.xml',
         'views/movie_type_view.xml',
         'views/movie_language_view.xml',
+        'data/movie_type_data.xml',
+        'data/movie_language_data.xml',
+        'data/movie_seating_template_data.xml',
+        'data/movie_data.xml',
+        'data/movie_show_data.xml',
+        'views/movie_seat_arrangement_view.xml',
     ]
 }

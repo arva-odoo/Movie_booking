@@ -21,8 +21,10 @@
                 <sheet>
                     <h1>
                         <field name="name"/>
-                    </h1>                    
-                        
+                    </h1>    
+                    <group>                
+                        <field name="count_movie" string="Total movies"/>
+                        </group>
                         <notebook>
                             <page string="movies">
                                 <!-- <field name="name"/> -->

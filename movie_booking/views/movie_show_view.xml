@@ -7,8 +7,15 @@
         <field name="arch" type="xml">
             <tree string="Movie show type">
                 <field name="show" widget="float_time"/>
+                 <field name="seating_template"/>
+                <field name="name"/>
                 <field name="date_from"/>
                 <field name="date_to"/>
+                <button name="%(movie_seating_arrangement_action)d" type="action" class="oe_stat_button"  icon="fa-list" string="open seat arrangemet">
+                                <!-- <field string="Offers" name="offer_count" widget="statinfo"/> -->
+                                 </button>
+            
+                <!-- <field name="movie_language_id"/> -->
             </tree>
         </field>
 
@@ -23,6 +30,9 @@
                 <sheet>
                     <group>
                             <field name="show"/>
+                            <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
                     </group>
                 </sheet>
             </form>

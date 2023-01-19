@@ -36,6 +36,7 @@
         <field name="name">movie show</field>
         <field name="res_model">movie.show</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('movie_id', '=', active_id)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                  Create a new Language, the first step of a new movie!
@@ -53,4 +54,18 @@
         </field>
 
     </record>
+
+    <record id="movie_seating_arrangement_action" model="ir.actions.act_window">
+        <field name="name">Seating arrangement</field>
+        <field name="res_model">movie.seat.arrangement</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('seat_template_id', '=', active_id)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                 Create a new Screen, the first step of a new movie!
+            </p>
+        </field>
+
+    </record>
+
 </odoo>

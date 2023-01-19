@@ -8,3 +8,5 @@ class movie_show(models.Model):
 
     show = fields.Float(string='Show')
     movie_id = fields.Many2one('movie.movie',required=True)
+    seating_template = fields.Many2one('movie.seating.template',string="seating_template")
+    # movie_language_id = fields.Many2one(related="movie_id.movie_language_id",store=True)

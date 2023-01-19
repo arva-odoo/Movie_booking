@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="movie_type_data" model="movie.type">
+            <field name="name">Adventures</field>
+        </record>
+        <record id="movie_type_data2" model="movie.type">
+            <field name="name">Romance</field>
+        </record>
+
+    </data>
+</odoo>

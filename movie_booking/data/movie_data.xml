@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="movie_data" model="movie.movie">
+            <field name="name">Brahmastra</field>
+            <field name="show_duration">3.0</field>
+            <field name="release_date">2022-11-10</field>
+            <field name="date_from">2022-12-12</field>
+            <field name="date_to">2023-03-12</field>
+            <field name="movie_language_id" ref="movie_language_data"></field>
+            <!-- <field name="seating_template" ref="movie_seating_template_data"></field> -->
+            <field name="movie_type_ids"  eval="[(6,0,[ref('movie_type_data'),ref('movie_type_data2')])]"/>
+            <field name="show_ids"  eval="[(6,0,[ref('movie_show_data')])]"/>
+
+        </record>
+
+    </data>
+</odoo>

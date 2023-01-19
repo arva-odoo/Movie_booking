@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="movie_show_data" model="movie.show">
+            <field name="show">10.30</field>
+            <field name="movie_id" ref="movie_data"></field>
+            <field name="seating_template" ref="movie_seating_template_data"/>
+        </record>
+    </data>
+</odoo>

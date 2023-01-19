@@ -9,6 +9,7 @@
                 <menuitem id="movie_menu_action" action="movie_action" name="movies"/>
                 <menuitem id="movie_seating_action" action="movie_seating_template_action" name="seating template"/>
                 <menuitem id="movie_language_menu" action="movie_language_action" name="Movie languages"/>
+                <menuitem id="movie_seating_arrangemtn_menu" action="movie_seating_arrangement_action" name="seating arrangement"/>
             </menuitem> 
     </menuitem>
 
