@@ -28,11 +28,13 @@
         <field name="arch" type="xml">
              <form string="movie show type"> 
                 <sheet>
+
                     <group>
+                            <field name="seating_template"/>
                             <field name="show"/>
-                            <field name="name"/>
-                <field name="date_from"/>
-                <field name="date_to"/>
+                            <!-- <field name="name"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/> -->
                     </group>
                 </sheet>
             </form>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <menuitem id="movie_menu_root" name="Movie Booking">
+    <menuitem id="movie_menu_root" name="Movie Booking" web_icon="movie_booking,static/discription/icon.png">
         <menuitem id="movie_first_level_menu" name="movie">
                 <menuitem id="movie_menu_action1" action="movie_action" name="movies"/>
         </menuitem>
@@ -9,7 +9,7 @@
                 <menuitem id="movie_menu_action" action="movie_action" name="movies"/>
                 <menuitem id="movie_seating_action" action="movie_seating_template_action" name="seating template"/>
                 <menuitem id="movie_language_menu" action="movie_language_action" name="Movie languages"/>
-                <menuitem id="movie_seating_arrangemtn_menu" action="movie_seating_arrangement_action" name="seating arrangement"/>
+                <!-- <menuitem id="movie_seating_arrangemtn_menu" action="movie_seating_arrangement_action" name="seating arrangement"/> -->
             </menuitem> 
     </menuitem>
 

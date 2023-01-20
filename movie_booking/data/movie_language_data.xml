@@ -4,5 +4,11 @@
         <record id="movie_language_data" model="movie.languages">
             <field name="name">Hindi</field>
         </record>
+         <record id="movie_language_data1" model="movie.languages">
+            <field name="name">Gujarati</field>
+        </record>
+         <record id="movie_language_data2" model="movie.languages">
+            <field name="name">English</field>
+        </record>
     </data>
 </odoo>

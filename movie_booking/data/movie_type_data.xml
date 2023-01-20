@@ -8,5 +8,13 @@
             <field name="name">Romance</field>
         </record>
 
+        <record id="movie_type_data3" model="movie.type">
+            <field name="name">Comedy</field>
+        </record>
+        <record id="movie_type_data4" model="movie.type">
+            <field name="name">Drama</field>
+        </record>
+
+
     </data>
 </odoo>

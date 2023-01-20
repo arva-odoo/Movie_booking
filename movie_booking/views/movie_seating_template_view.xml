@@ -7,14 +7,6 @@
         <field name="arch" type="xml">
             <tree string="Movie template">
                 <field name="name"/>
-                <field name="ticket_type"/>
-                <field name="price"/>
-                <button name="%(movie_seating_arrangement_action)d" type="action" class="oe_stat_button"  icon="fa-list">
-                                <!-- <field string="Offers" name="offer_count" widget="statinfo"/> -->
-                            </button>
-                <!--
-                <field name="total_row"/> -->
-                <!-- <field name="status" widget="badge"/> -->
             </tree>
         </field> 
 
@@ -33,14 +25,14 @@
                             <group>
                                 <group> 
                                     <field name="name"/>
-                                    <field name="ticket_type"/>
-                                    <field name="price"/>
-                                    <button name="%(movie_seating_arrangement_action)d" type="action" class="oe_stat_button"  icon="fa-list">
-                                <!-- <field string="Offers" name="offer_count" widget="statinfo"/> -->
-                            </button>
-                                    <!-- <field name="total_row"/> -->
+                                    <!-- <field name="arrange_ids"/> -->
                                 </group>
-                            
+                                <group> 
+                                    <field name="no_of_seats"/>
+                                </group>
+                                <group>
+                                    <field name="seat"/>
+                                </group>
                             </group>    
                     </sheet>
             </form> 

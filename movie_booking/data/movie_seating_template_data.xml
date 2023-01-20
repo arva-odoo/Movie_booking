@@ -2,6 +2,9 @@
 <odoo>
     <data>
         <record id="movie_seating_template_data" model="movie.seating.template">
+            <field name="name">Screen A</field>
+        </record>
+          <record id="movie_seating_template_data2" model="movie.seating.template">
             <field name="name">Screen B</field>
         </record>
     </data>

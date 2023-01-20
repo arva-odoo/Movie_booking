@@ -6,10 +6,15 @@
         <field name="model">movie.seat.arrangement</field>
         <field name="arch" type="xml">
             <tree string="Movie seat arrangement">
-                <field name="name"/>
+                <!-- <field name="name"/> -->
+                <field name="seating_template"/>
+                <!-- <field name="name"/> -->
                 <field name="show_time"/>
                 <field name="ticket_type"/>
                 <field name="max_seat_in_one_row"/>
+                <button class="oe_stat_button"  icon="fa-list" string="open seat arrangemet">
+                                <!-- <field string="Offers" name="offer_count" widget="statinfo"/> -->
+                                 </button>
                 
             </tree>
         </field> 
@@ -25,10 +30,12 @@
                     <sheet>
                     <h2>Seat arrangement</h2>                           
                                 <group> 
-                                    <field name="name"/>
+                                     <field name="seating_template"/>
+                                    <!-- <field name="name"/> -->
                                     <field name="ticket_type"/>
                                     <field name="show_time"/>
                                     <field name="max_seat_in_one_row"/>
+                                    
                                 </group>
                     </sheet>
             </form> 

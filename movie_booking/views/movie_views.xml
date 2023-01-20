@@ -11,13 +11,19 @@
                 <field name="movie_language_id"/>
                 <field name="date_from"/>
                 <field name="date_to"/>
-                <field name="image" widget="image" class="oe_avatar"/>
-                <field name="show_ids">
+                <field name="image" widget="image" class="oe_avatar" options='{"size":[80,80]}'/>
+                <field name="show_ids" widget="many2many_tags"/>
+                <!-- <field name="arrange_ids">
+                    <tree>
+                    <field name="show_time"/>
+                    </tree>
+                </field> -->
+                <!-- <field name="show_ids">
                     <tree>
                         <field name="show"  widget="many2many_tags"/> 
                         <field name="seating_template" widget="radio"/>
                     </tree>
-                </field>
+                </field> -->
                 <field name="movie_type_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
             </tree>
         </field>
@@ -34,11 +40,11 @@
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         
-                            <button name="%(movie_show_action)d" type="action" class="oe_stat_button"  icon="fa-film">
+                            <button name="%(movie_seating_arrangement_action)d" type="action" class="oe_stat_button"  icon="fa-film">
                                 <field string="shows" name="show_count" widget="statinfo"/>
                             </button>
                         </div>
-                <field name="image" widget='image' nolabel='1' class="oe_avatar" options="{'preview_image':'image','zoom':true,'zoom_delay':1000}"/>
+                <field name="image" widget='image' nolabel='1' class="oe_avatar" />
                    <h1>
                         <field name="name"/>
                    </h1>
@@ -66,7 +72,9 @@
                                 <page string='Event'>
                                     <field name="show_ids"/>
                                 </page>
-
+                                <page string="shows">
+                                    <!-- <field name="arrange_ids"/> -->
+                                </page>
                                 <page string='about'>
                                    <p> 
                                     <b>Director:</b>Neeraj Joshi
