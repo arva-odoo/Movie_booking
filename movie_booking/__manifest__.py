@@ -21,6 +21,6 @@
         'data/movie_seating_template_data.xml',
         'data/movie_data.xml',
         'data/movie_show_data.xml',
-        'views/movie_seat_arrangement_view.xml',
+        # 'views/movie_seat_arrangement_view.xml',
     ]
 }

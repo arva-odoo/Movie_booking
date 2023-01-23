@@ -11,11 +11,8 @@
                 <field name="name"/>
                 <field name="date_from"/>
                 <field name="date_to"/>
-                <button name="%(movie_seating_arrangement_action)d" type="action" class="oe_stat_button"  icon="fa-list" string="open seat arrangemet">
-                                <!-- <field string="Offers" name="offer_count" widget="statinfo"/> -->
-                                 </button>
-            
-                <!-- <field name="movie_language_id"/> -->
+                <button name="action_screen" type="object" class="oe_stat_button" icon="fa-list" string="open seat arrangemet"/>
+                
             </tree>
         </field>
 
@@ -30,11 +27,11 @@
                 <sheet>
 
                     <group>
-                            <field name="seating_template"/>
+                        <field name="seating_template"/>
                             <field name="show"/>
-                            <!-- <field name="name"/>
+                            <field name="name"/>
                             <field name="date_from"/>
-                            <field name="date_to"/> -->
+                            <field name="date_to"/>
                     </group>
                 </sheet>
             </form>

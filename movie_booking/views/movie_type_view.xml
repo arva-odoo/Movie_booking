@@ -17,22 +17,20 @@
         <field name="name">movie.type.form.view</field>
         <field name="model">movie.type</field>
         <field name="arch" type="xml">
-             <form string="movie show type"> 
+             <form> 
                 <sheet>
-                    <h1>
+                <group>
+                    <!-- <h1> -->
                         <field name="name"/>
-                    </h1>                    
-                        
+                    <!-- </h1> -->
+                    </group>                   
                         <notebook>
-                            <page string="Properties">
-                                <field name="name"/>
-                                <!-- <field name="movie_ids">
+                            <page string="Movies">
+                               <field name="movie_ids">
                                     <tree>
                                         <field name="name"/>
-                                         <field name="expected_price"/>
-                                        <field name="status"/> 
                                     </tree>
-                                </field> -->
+                                </field>
                             </page>
                         </notebook>
                 </sheet>

@@ -6,6 +6,7 @@ class movie_movie(models.Model):
     _description = 'movie booking management'
 
     movie_language_id = fields.Many2one('movie.languages',string="movie languages")
+    # movie_type_id =fields.Many2one('movie.type',string="movie types")
     movie_type_ids = fields.Many2many('movie.type',string='movie type')
     name = fields.Char('Movie name',required=True)
     release_date = fields.Date('release date')
@@ -18,6 +19,7 @@ class movie_movie(models.Model):
     show_ids = fields.One2many('movie.show','movie_id',string="movie shows")
     # arrange_ids = fields.One2many('movie.seat.arrangement','movie_id',string="movie shows")
     show_count = fields.Integer('show count',compute='_compute_show_count',default=0)
+    active = fields.Boolean(default=True)
 
     @api.depends('show_ids','show_count')
     def _compute_show_count(self):
