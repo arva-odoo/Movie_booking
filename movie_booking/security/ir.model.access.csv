@@ -4,3 +4,4 @@ movie_booking.access_movie_seating_template,access_movie_seating_template,movie_
 movie_booking.access_movie_show,access_movie_show,movie_booking.model_movie_show,base.group_user,1,1,1,1
 movie_booking.access_movie_type,access_movie_type,movie_booking.model_movie_type,base.group_user,1,1,1,1
 movie_booking.access_movie_languages,access_movie_languages,movie_booking.model_movie_languages,base.group_user,1,1,1,1
+movie_booking.access_movie_booking,access_movie_booking,movie_booking.model_movie_booking,base.group_user,1,1,1,1

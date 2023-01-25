@@ -6,8 +6,10 @@ class movie_screen_template(models.Model):
     _description = 'show movie seating template'
 
     name = fields.Char('Name',required=True)
-    no_of_seats = fields.Integer('number of seats')
-    seat = fields.Boolean()
+    total_seat = fields.Integer('Total seats')
+    price = fields.Integer('Price')
+
+    # seat = fields.Boolean()
 
 
 

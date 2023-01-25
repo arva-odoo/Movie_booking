@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!-- tree view-->
+    <record id="movie_booking_tree_view" model="ir.ui.view">
+        <field name="name">movie.booking.tree.view</field>
+        <field name="model">movie.booking</field>
+        <field name="arch" type="xml">
+            <tree string="Movie show type">
+                <field name="show" widget="float_time"/>
+                 <field name="seating_template"/>
+                <field name="name"/>
+                <field name="customer"/>
+                <!-- <field name="date_from"/>
+                <field name="date_to"/>
+                <button name="action_screen" type="object" class="oe_stat_button" icon="fa-list" string="open seat arrangemet"/>
+                 -->
+            </tree>
+        </field>
+
+    </record>
+
+<!-- form view-->
+    <record id="movie_booking_form_view" model="ir.ui.view">
+        <field name="name">movie.booking.form.view</field>
+        <field name="model">movie.booking</field>
+        <field name="arch" type="xml">
+             <form> 
+                <sheet>
+                   <!-- <field name="seating_template"/> -->
+                   <field name="name"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -27,11 +27,16 @@
                                     <!-- <field name="arrange_ids"/> -->
                                 </group>
                                 <group> 
-                                    <field name="no_of_seats"/>
+                                    <field name="total_seat"/>
                                 </group>
-                                <group>
+                                <!-- <group>
                                     <field name="seat"/>
+                                </group> -->
+                                <group>
+                                    <field name="price"/>
                                 </group>
+                                <button name="%(movie_booking_action)d" type="action" class="oe_stat_button"  icon="fa-film" string="Book ticket">
+                            </button>
                             </group>    
                     </sheet>
             </form> 

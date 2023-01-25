@@ -92,6 +92,49 @@
         </field>
     </record>
 
+<!-- movie kanban view -->
+    <record id="movie_kanban_view" model="ir.ui.view">
+        <field name="name">movie.kanban.view</field>
+        <field name="model">movie.movie</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="image"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img class="o_kanban_image_inner_pic" t-att-src="kanban_image('movie.movie','image',record.id.raw_value)" alt="Image"/>
+                            </div>
+                            <div>
+                            <h3>
+                                <field name="name"/>
+                                </h3>
+                                <field name="movie_language_id"/>
+                                <field name="movie_type_ids" widget="many2many_tags"/>
+                                <field name="show_ids" widget="many2many_tags"/>
+                            </div>
+                        </div>
+
+                        <!-- <div class="oe_kanban_global_click o_kanban_record_has_image_fill">
+                            <div class="o_kanban_image d-none d-md-block" t-attf-style="background-image:url('#{kanban_image('movie.movie','image')}')">
+                                <img class="o_kanban_image_inner_pic" t-att-src="kanban_image('movie.movie','image')"/> 
+                            </div>
+                            <h3>
+                            <field name="name"/>
+                            </h3>
+                        </div>-->
+                        
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+
+
+
 
     <!-- Search view -->
         <record id="movie_search_view" model="ir.ui.view">
@@ -111,6 +154,7 @@
                      <group string="Group By">
                         <filter string="language" name="movie_language_id" context="{'group_by':'movie_language_id'}"/>
                      </group> 
+                    
                 </search>
             </field>
         </record>

@@ -12,7 +12,8 @@
                 <field name="date_from"/>
                 <field name="date_to"/>
                 <button name="action_screen" type="object" class="oe_stat_button" icon="fa-list" string="open seat arrangemet"/>
-                
+                <button name="%(movie_booking_action)d" type="action" class="oe_stat_button"  icon="fa-film" string="Book ticket">
+                            </button>
             </tree>
         </field>
 
